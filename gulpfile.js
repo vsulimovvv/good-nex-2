@@ -93,7 +93,7 @@ function images() {
         interlaced: true
       }),
       imagemin.mozjpeg({
-        quality: 75,
+        quality: 65,
         progressive: true
       }),
       imagemin.optipng({
