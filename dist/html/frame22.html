@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  @include('./components/base/_meta.html')
+  @include('./components/base/_links.html')
+
+  <title>Goodnex</title>
+</head>
+
+<body>
+  @include('./components/popups/_popup.html')
+  <div class="overlay"></div>
+  <div class="site-wrapper">
+    @include('./components/_header-bg.html')
+    <main class="main">
+      @include('./components/frame22/_section-blog.html')
+      @include('./components/_section-question.html')
+    </main>
+    @include('./components/_footer.html')
+  </div>
+
+  @include('./components/base/_scripts.html')
+</body>
+
+</html>

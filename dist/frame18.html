@@ -1,0 +1,883 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!-- Favicon -->
+ <link rel="shortcut icon" href="images/favicon.svg" type="image/x-icon">
+
+ <!-- Link Swiper's CSS -->
+ <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+ <!-- nouislider -->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.5.0/nouislider.min.css" />
+ <link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css" />
+ <!-- jQueryFormStyler -->
+ <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+
+ <!-- wSelect -->
+ <link rel="stylesheet" href="css/wSelect.css">
+
+ <!-- Custom Link -->
+ <link rel="stylesheet" href="css/style.min.css">
+
+  <title>Goodnex</title>
+</head>
+
+<body>
+  <div class="popup popup--free-selection">
+  <div class="popup__container">
+    <button class="popup__close" type="button" aria-label="Закрыть">
+      <svg width="33" height="33">
+        <use xlink:href="images/sprite.svg#close"></use>
+      </svg>
+    </button>
+    <div class="popup__wrapper">
+      <div class="popup__left">
+        <h2 class="popup__title">ОСТАВЬТЕ ЗАЯВКУ <span>НА БЕСПЛАТНЫЙ ПОДБОР объекта</span> </h2>
+        <div class="popup__text">
+          <p>Наш менеджер свяежтся с вами в течение 20 мин.</p>
+        </div>
+        <form class="popup__form form-submit">
+          <label class="form-submit__label">
+            <input class="form-submit__input" type="text" id="name-selection" name="name-selection"
+              placeholder="Ваше имя" required>
+          </label>
+          <label class="form-submit__label">
+            <input class="form-submit__input" type="tel" id="tel-selection" name="tel-selection"
+              placeholder="+7(___)___-__-__" required>
+          </label>
+          <button class="form-submit__btn" type="submit">оставить заявку</button>
+        </form>
+      </div>
+      <div class="popup__right">
+        <button class="popup__search-btn" type="button" aria-label="Окрыть поиск">
+          <svg width="34" height="34">
+            <use xlink:href="images/sprite.svg#search"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="popup popup--download">
+  <div class="popup__container">
+    <button class="popup__close" type="button" aria-label="Закрыть">
+      <svg width="33" height="33">
+        <use xlink:href="images/sprite.svg#close"></use>
+      </svg>
+    </button>
+    <div class="popup__wrapper">
+      <div class="popup__left">
+        <h2 class="popup__title">скачайте каталог лучших жк москвы </h2>
+        <div class="popup__text">
+          <p>По версии нашего агентсва</p>
+        </div>
+        <form class="popup__form form-submit">
+          <label class="form-submit__label">
+            <input class="form-submit__input" type="text" id="name-download" name="name-download" placeholder="Ваше имя"
+              required>
+          </label>
+          <label class="form-submit__label">
+            <input class="form-submit__input" type="tel" id="phone-download" name="phone-download"
+              placeholder="+7(___)___-__-__" required>
+          </label>
+          <button class="form-submit__btn" type="submit">скачать каталог</button>
+        </form>
+      </div>
+      <div class="popup__right">
+        <ul class="popup__list">
+          <li class="popup__item">
+            ТОП 15 отобранных <br>
+            и проверенных объектов
+          </li>
+          <li class="popup__item">
+            Информация, планировки, преимущества каждого ЖК
+          </li>
+          <li class="popup__item">
+            Бюджет от 15 млн. руб.
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="popup popup--favorites">
+  <div class="popup__container">
+    <button class="popup__close" type="button" aria-label="Закрыть">
+      <svg width="33" height="33">
+        <use xlink:href="images/sprite.svg#close"></use>
+      </svg>
+    </button>
+    <div class="popup__wrapper">
+      <div class="popup__left">
+        <h2 class="popup__title">скачайте полные презентации выбранных жк</h2>
+        <div class="popup__text">
+          <p>Презентацию подготовили наши эксперты</p>
+        </div>
+        <form class="popup__form form-submit">
+          <label class="form-submit__label">
+            <input class="form-submit__input" type="text" id="name-favorites" name="name-download"
+              placeholder="Ваше имя" required>
+          </label>
+          <label class="form-submit__label">
+            <input class="form-submit__input" type="tel" id="phone-favorites" name="phone-download"
+              placeholder="+7(___)___-__-__" required>
+          </label>
+          <button class="form-submit__btn" type="submit">скачать презентации</button>
+        </form>
+      </div>
+      <div class="popup__right"></div>
+    </div>
+  </div>
+</div>
+
+<div class="popup popup--remote-show">
+  <div class="popup__container">
+    <button class="popup__close" type="button" aria-label="Закрыть">
+      <svg width="33" height="33">
+        <use xlink:href="images/sprite.svg#close"></use>
+      </svg>
+    </button>
+    <div class="popup__wrapper">
+      <div class="popup__left">
+        <h2 class="popup__title">запишитесь на дистанционный показ выбранных жк</h2>
+        <div class="popup__text">
+          <p>Наш менеджер свяежтся с вами в течение 20 мин.</p>
+        </div>
+        <form class="popup__form form-submit">
+          <label class="form-submit__label">
+            <input class="form-submit__input" type="text" id="name-remote-show" name="name-download"
+              placeholder="Ваше имя" required>
+          </label>
+          <label class="form-submit__label">
+            <input class="form-submit__input" type="tel" id="phone-remote-show" name="phone-download"
+              placeholder="+7(___)___-__-__" required>
+          </label>
+          <button class="form-submit__btn" type="submit">скачать презентации</button>
+        </form>
+      </div>
+      <div class="popup__right"></div>
+    </div>
+  </div>
+</div>
+
+<div class="popup popup--get-info">
+  <div class="popup__container">
+    <button class="popup__close" type="button" aria-label="Закрыть">
+      <svg width="33" height="33">
+        <use xlink:href="images/sprite.svg#close"></use>
+      </svg>
+    </button>
+    <div class="popup__wrapper">
+      <div class="popup__left">
+        <h2 class="popup__title">оставьте свой номер телефона</h2>
+        <div class="popup__text">
+          <p>И получайте актуальную информацию о ЖК в удобном мессенджере</p>
+        </div>
+        <form class="popup__form form-submit">
+          <label class="form-submit__label">
+            <input class="form-submit__input" type="text" id="name-get-info" name="name-download" placeholder="Ваше имя"
+              required>
+          </label>
+          <label class="form-submit__label">
+            <input class="form-submit__input" type="tel" id="phone-get-info" name="phone-download"
+              placeholder="+7(___)___-__-__" required>
+          </label>
+          <button class="form-submit__btn" type="submit">получить информацию</button>
+        </form>
+      </div>
+      <div class="popup__right"></div>
+    </div>
+  </div>
+</div>
+
+<div class="popup popup--get-contacts">
+  <div class="popup__container">
+    <button class="popup__close" type="button" aria-label="Закрыть">
+      <svg width="33" height="33">
+        <use xlink:href="images/sprite.svg#close"></use>
+      </svg>
+    </button>
+    <div class="popup__wrapper" data-simplebar>
+      <div class="popup__left">
+        <h2 class="popup__title">ОСТАВЬТЕ ЗАЯВКУ <span> и получите контакты клиентов</span></h2>
+        <div class="popup__text">
+          <p>Наш менеджер свяежтся с вами
+            в течение 20 мин.</p>
+        </div>
+        <form class="popup__form form-submit">
+          <label class="form-submit__label">
+            <input class="form-submit__input" type="text" id="name-get-contacts" name="name-download"
+              placeholder="Ваше имя" required>
+          </label>
+          <label class="form-submit__label">
+            <input class="form-submit__input" type="tel" id="phone-get-contacts" name="phone-download"
+              placeholder="+7(___)___-__-__" required>
+          </label>
+          <button class="form-submit__btn" type="submit">получить контакты клиентов</button>
+        </form>
+      </div>
+      <div class="popup__right"></div>
+    </div>
+  </div>
+</div>
+
+<div class="popup popup--card-object">
+  <div class="popup__container">
+    <button class="popup__close" type="button" aria-label="Закрыть">
+      <svg width="33" height="33">
+        <use xlink:href="images/sprite.svg#close"></use>
+      </svg>
+    </button>
+    <!-- data-simplebar -->
+    <div class="popup__wrapper">
+      <div class="popup__left">
+        <h2 class="popup__title">
+          скачайте полную презентацию <span>
+            [жк назавния]</span>
+        </h2>
+        <div class="popup__text">
+          <p>Презентацию подготовили наши эксперты</p>
+        </div>
+        <form class="popup__form form-submit">
+          <label class="form-submit__label">
+            <input class="form-submit__input" type="text" id="name-card-object" name="name-download"
+              placeholder="Ваше имя" required >
+          </label>
+          <label class="form-submit__label">
+            <input class="form-submit__input" type="tel" id="phone-card-object" name="phone-download"
+              placeholder="+7(___)___-__-__" required>
+          </label>
+          <button class="form-submit__btn" type="submit">получить контакты клиентов</button>
+        </form>
+      </div>
+      <div class="popup__right">
+        <span class="popup__heading">В презентации</span>
+        <ul class="popup__list">
+          <li class="popup__item">Места и инфаструктура рядом</li>
+          <li class="popup__item">Качественные фото и видео </li>
+          <li class="popup__item">Преимущества и особенности</li>
+          <li class="popup__item">Полное описание от эксперта</li>
+          <li class="popup__item">Планировки и цены</li>
+          <li class="popup__item">Акции и скидки</li>
+          <li class="popup__item">Инвестиционный потенциал</li>
+          <li class="popup__item">Информация об ипотеки</li>
+          <li class="popup__item">Ход строительсва</li>
+          <li class="popup__item">Рейтинг застройщика</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+  <div class="overlay"></div>
+  <div class="site-wrapper">
+    <header class="header header--logo-bg">
+  <div class="container container--1640">
+    <nav class="header__wrapper">
+      <button class="header__toggle" type="button" aria-label="Открыть меню">
+        <span class="header__toggle-line"></span>
+      </button>
+
+      <a class="header__logo logo" href="#">
+        <picture>
+          <source srcset="images/logo-mobile.svg" media="(max-width: 991px)">
+          <img src="images/logo.svg" alt="Логотип">
+        </picture>
+      </a>
+
+      <div class="menu">
+        <ul class="menu__list">
+
+          <li class="menu__item">
+            <div class="dropdown" data-dropdown>
+              <a class="menu__link menu__link--dropdown" data-dropdown-button href="#">каталог</a>
+
+              <div class="dropdown-menu dropdown-menu--catalog">
+                <div class="dropdown-catalog">
+                  <div class="dropdown-catalog__left">
+                    <a class="dropdown-catalog__name" href="#">Каталог ЖК
+                      <span>44</span>
+                    </a>
+                  </div>
+                  <div class="dropdown-catalog__middle">
+                    <span class="dropdown-catalog__name">Подборка ЖК</span>
+                    <ul class="dropdown-catalog__list">
+                      <li class="dropdown-catalog__item">
+                        <a class="dropdown-catalog__link" href="#">Для инвестиций</a>
+                      </li>
+                      <li class="dropdown-catalog__item">
+                        <a class="dropdown-catalog__link" href="#">С каминами</a>
+                      </li>
+                      <li class="dropdown-catalog__item">
+                        <a class="dropdown-catalog__link" href="#">В ЦАО</a>
+                      </li>
+                      <li class="dropdown-catalog__item">
+                        <a class="dropdown-catalog__link" href="#">С видами на реку</a>
+                      </li>
+                      <li class="dropdown-catalog__item">
+                        <a class="dropdown-catalog__link" href="#">С террасамий</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="dropdown-catalog__right">
+                    <div class="dropdown-catalog__offer">
+                      <h3 class="dropdown-catalog__title">
+                        скачайте каталог лучших жк москвы
+                      </h3>
+                      <div class="dropdown-catalog__text">
+                        <p>
+                          По версии нашего агентства
+                        </p>
+                      </div>
+                      <a class="dropdown-catalog__btn btn" href="#">скачать каталог</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="menu__item">
+            <div class="dropdown" data-dropdown>
+              <a class="menu__link menu__link--dropdown" data-dropdown-button href="#">о нас</a>
+
+              <ul class="dropdown-menu dropdown-menu--about">
+                <li class="dropdown-menu__item">
+                  <a class="dropdown-menu__link" href="#">О компании</a>
+                </li>
+                <li class="dropdown-menu__item">
+                  <a class="dropdown-menu__link" href="#">Сотрудничество</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">проекты</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">вакансии</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">блог</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">контакты</a>
+          </li>
+        </ul>
+
+      </div>
+
+      <div class="header__tools">
+
+        <div class="header__phone">
+          <div class="dropdown" data-dropdown>
+            <button class="phone" data-dropdown-button type="button">+7(495) 032-30-33</button>
+
+            <div class="dropdown-menu dropdown-menu--messangers">
+              <div class="messagers">
+                <ul class="messagers__list">
+                  <li class="messagers__item">
+                    <a class="messagers__link messagers__link--telegram" href="#">Telegram</a>
+                  </li>
+                  <li class="messagers__item">
+                    <a class="messagers__link messagers__link--viber" href="#">Viber</a>
+                  </li>
+                  <li class="messagers__item">
+                    <a class="messagers__link messagers__link--whatsapp" href="#">WhatsApp</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <button class="header__favorite" type="button" aria-label="Любимые"></button>
+        <a class="header__tel-mobile" href="#" aria-label="Позвонить"></a>
+        <button class="header__btn" type="button">Бесплантый подбор</button>
+      </div>
+
+      <div class="mobile-menu">
+        <div class="mobile-menu__top">
+          <button class="mobile-menu__close" type="button" aria-label="Закрыть меню">
+            <svg width="28" height="28">
+              <use xlink:href="images/sprite.svg#close"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="mobile-menu__body">
+          <div class="mobile-menu-box accordion">
+
+            <button class="mobile-menu-box__name accordion__control" type="button">Каталог
+              <span></span>
+            </button>
+
+            <div class="mobile-menu-box__content accordion__content">
+              <ul class="mobile-menu-box__list">
+                <li class="mobile-menu-box__item">
+                  <a class="mobile-menu-box__link" href="#">Каталог ЖК</a>
+                </li>
+                <li class="mobile-menu-box__item">
+                  <a class="mobile-menu-box__link" href="#">Подборки ЖК</a>
+
+                  <ul class="submenu">
+                    <li class="submenu__item">
+                      <a href="#" class="submenu__link">Для инвестиций</a>
+                    </li>
+                    <li class="submenu__item">
+                      <a href="#" class="submenu__link">С каминами</a>
+                    </li>
+                    <li class="submenu__item">
+                      <a href="#" class="submenu__link">В ЦАО</a>
+                    </li>
+                    <li class="submenu__item">
+                      <a href="#" class="submenu__link">С видами на реку</a>
+                    </li>
+                    <li class="submenu__item">
+                      <a href="#" class="submenu__link">С террасами</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="mobile-menu-box accordion">
+
+            <button class="mobile-menu-box__name accordion__control" type="button">о нас
+              <span></span>
+            </button>
+
+            <div class="mobile-menu-box__content accordion__content">
+              <ul class="mobile-menu-box__list">
+                <li class="mobile-menu-box__item">
+                  <a class="mobile-menu-box__link" href="#">Lorem, ipsum.</a>
+                </li>
+                <li class="mobile-menu-box__item">
+                  <a class="mobile-menu-box__link" href="#">Lorem, ipsum dolor.</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <a class="mobile-menu-box__name" href="#">проекты</a>
+          <a class="mobile-menu-box__name" href="#">вакансии</a>
+          <a class="mobile-menu-box__name" href="#">блог</a>
+          <a class="mobile-menu-box__name" href="#">контакты</a>
+        </div>
+
+        <div class="mobile-menu__bottom">
+          <a class="header__btn" href="#">Бесплатный подбор</a>
+        </div>
+      </div>
+    </nav>
+  </div>
+</header>
+
+    <div class="breadcrumbs">
+      <div class="container">
+        <ul class="breadcrumbs__list">
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link">
+              хлебные крошки
+            </a>
+          </li>
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link breadcrumbs__link--active" href="#">
+              хлебные крошки
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <main class="main">
+      <section class="favorites">
+  <div class="container">
+    <h1 class="favorites__title section-title">Объекты которые вам понравились</h1>
+
+    <div class="favorites__wrapper">
+      <ul class="favorites__list">
+        <li class="favorites__item">
+          <article class="product-card">
+            <div class="product-card__slider swiper">
+              <ul class="swiper-wrapper">
+                <li class="swiper-slide">
+                  <div class="product-card__img">
+                    <img src="images/content/product-card/1.jpg" alt="ЖК Лазурное">
+                  </div>
+                </li>
+                <li class="swiper-slide">
+                  <div class="product-card__img">
+                    <img src="images/content/product-card/1.jpg" alt="ЖК Лазурное">
+                  </div>
+                </li>
+                <li class="swiper-slide">
+                  <div class="product-card__img">
+                    <img src="images/content/product-card/1.jpg" alt="ЖК Лазурное">
+                  </div>
+                </li>
+              </ul>
+              <div class="swiper-pagination"></div>
+            </div>
+            <div class="product-card__info">
+              <h3 class="product-card__title"><a class="product-card__link" href="#">Название ЖК</a></h3>
+              <div class="product-card__badges badges">
+                <ul class="badges__list">
+                  <li class="badges__item badges__item--business">
+                    БИЗНЕС
+                  </li>
+                  <li class="badges__item badges__item--passed">
+                    СДАН
+                  </li>
+                </ul>
+              </div>
+              <div class="product-card__price">
+                <p>15.2 <span>млн</span> - 75,8 <span>млн</span>.</p>
+              </div>
+              <div class="product-card__location">
+                <span class="product-card__district">Москва, ЦАО, Таганский, Тессинский переулок</span>
+                <span class="product-card__metro">Китай город</span>
+              </div>
+            </div>
+            <div class="product-card__bottom">
+              <ul class="product-card__list">
+                <li class="product-card__item product-card__item--flats">
+                  89 квартир
+                </li>
+                <li class="product-card__item product-card__item--area">
+                  24-354 м²
+                </li>
+                <li class="product-card__item product-card__item--floors">
+                  8-12 этажей
+                </li>
+                <li class="product-card__item product-card__item--rooms">
+                  1-5 комнат
+                </li>
+              </ul>
+
+              <div class="product-card__actions">
+                <button class="product-card__more" type="button">подробнее</button>
+                <button class="product-card__like" type="button" aria-label="нравится">
+                  <svg width="29" height="29">
+                    <use href="images/sprite.svg#favorite-icon"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </article>
+        </li>
+        <li class="favorites__item">
+          <article class="product-card">
+            <div class="product-card__slider swiper">
+              <ul class="swiper-wrapper">
+                <li class="swiper-slide">
+                  <div class="product-card__img">
+                    <img src="images/content/product-card/1.jpg" alt="ЖК Лазурное">
+                  </div>
+                </li>
+                <li class="swiper-slide">
+                  <div class="product-card__img">
+                    <img src="images/content/product-card/1.jpg" alt="ЖК Лазурное">
+                  </div>
+                </li>
+                <li class="swiper-slide">
+                  <div class="product-card__img">
+                    <img src="images/content/product-card/1.jpg" alt="ЖК Лазурное">
+                  </div>
+                </li>
+              </ul>
+              <div class="swiper-pagination"></div>
+            </div>
+            <div class="product-card__info">
+              <h3 class="product-card__title"><a class="product-card__link" href="#">Название ЖК</a></h3>
+              <div class="product-card__badges badges">
+                <ul class="badges__list">
+                  <li class="badges__item badges__item--business">
+                    БИЗНЕС
+                  </li>
+                  <li class="badges__item badges__item--passed">
+                    СДАН
+                  </li>
+                </ul>
+              </div>
+              <div class="product-card__price">
+                <p>15.2 <span>млн</span> - 75,8 <span>млн</span>.</p>
+              </div>
+              <div class="product-card__location">
+                <span class="product-card__district">Москва, ЦАО, Таганский, Тессинский переулок</span>
+                <span class="product-card__metro">Китай город</span>
+              </div>
+            </div>
+            <div class="product-card__bottom">
+              <ul class="product-card__list">
+                <li class="product-card__item product-card__item--flats">
+                  89 квартир
+                </li>
+                <li class="product-card__item product-card__item--area">
+                  24-354 м²
+                </li>
+                <li class="product-card__item product-card__item--floors">
+                  8-12 этажей
+                </li>
+                <li class="product-card__item product-card__item--rooms">
+                  1-5 комнат
+                </li>
+              </ul>
+
+              <div class="product-card__actions">
+                <button class="product-card__more" type="button">подробнее</button>
+                <button class="product-card__like" type="button" aria-label="нравится">
+                  <svg width="29" height="29">
+                    <use href="images/sprite.svg#favorite-icon"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </article>
+        </li>
+      </ul>
+
+      <aside class="favorites__side side-box">
+        <h3 class="side-box__title">
+          Что вы хотите получить?
+        </h3>
+        <button class="side-box__btn btn" type="button">ПОЛУЧИТЬ ПРЕЗЕНТАЦИи выбранных ЖК</button>
+        <button class="side-box__btn btn btn--transparent" type="button">ПОДОБРАТЬ КВАРТИРУ В выбранных ЖК</button>
+        <a class="side-box__link" href="#">дистанционный показ</a>
+      </aside>
+    </div>
+  </div>
+</section>
+      <section class="question">
+  <div class="container">
+    <div class="question__wrapper">
+      <div class="question__offer">
+        <h2 class="question__title section-title">
+          задайте вопрос <span>эксперту</span>
+        </h2>
+        <div class="question__text">
+          <p>Ответим за 5 минут в удобном мессенджере</p>
+        </div>
+      </div>
+      <div class="question__experts">
+        <div class="question__expert">
+          <img src="images/content/experts/1.jpg" alt="Эксперт">
+        </div>
+        <div class="question__expert">
+          <img src="images/content/experts/2.jpg" alt="Эксперт">
+        </div>
+      </div>
+      <div class="question__messagers messagers">
+        <ul class="messagers__list">
+          <li class="messagers__item">
+            <a class="messagers__link messagers__link--telegram" href="#">Telegram</a>
+          </li>
+          <li class="messagers__item">
+            <a class="messagers__link messagers__link--viber" href="#">Viber</a>
+          </li>
+          <li class="messagers__item">
+            <a class="messagers__link messagers__link--whatsapp" href="#">WhatsApp</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+    </main>
+    <footer class="footer">
+  <!-- Десктопная версия футера -->
+  <div class="footer__desktop">
+    <div class="footer__wrapper">
+      <div class="footer__left">
+        <div class="footer__col">
+          <span class="footer__name">Каталог ЖК</span>
+        </div>
+        <div class="footer__col">
+          <span class="footer__name">Подборки ЖК</span>
+          <ul class="footer__col-list">
+            <li class="footer__col-item"><a class="footer__col-link" href="#">Пункт</a></li>
+            <li class="footer__col-item"><a class="footer__col-link" href="#">Пункт</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <span class="footer__name">О нас</span>
+          <ul class="footer__col-list">
+            <li class="footer__col-item"><a class="footer__col-link" href="#">Пункт</a></li>
+            <li class="footer__col-item"><a class="footer__col-link" href="#">Пункт</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__right">
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a class="footer__link" href="#">Наши работы</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">Карьера</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">Сотрудничество</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">Блог</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">Контакты</a>
+          </li>
+        </ul>
+        <div class="footer__contacts">
+          <a class="footer__phone" href="#">+7(495) 032-30-33</a>
+          <address class="footer__address">
+            <p>
+              БЦ Neo Geo, г. Москва, ул. Бутлерова 17
+            </p>
+          </address>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <div class="footer__bottom-wrap">
+          <a class="footer__telegram" href="#">
+            <span> Получайте новости</span> <span>о ЖК в нашем</span> <span>Telegram канале</span></a>
+          <div class="footer__img">
+            <img src="images/content/footer/phone.png" alt="Телефон">
+          </div>
+          <div class="footer__data">
+            <a class="footer__privacy-link" href="#">Политика конфиденциальности</a>
+            <a class="footer__map-link" href="#">Карта сайта</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer__overlay"></div>
+  </div>
+  <!-- Мобильная версия футера -->
+  <div class="footer__mobile footer-mobile">
+    <div class="footer-mobile__wrapper">
+      <div class="footer-mobile__top">
+        <div class="footer-mobile-box accordion">
+
+          <button class="footer-mobile-box__name accordion__control" type="button">Каталог
+            <span></span>
+          </button>
+
+          <div class="footer-mobile-box__content accordion__content">
+            <ul class="footer-mobile-box__list">
+              <li class="footer-mobile-box__item">
+                <a class="footer-mobile-box__link" href="#">Пункт</a>
+              </li>
+              <li class="footer-mobile-box__item">
+                <a class="footer-mobile-box__link" href="#">Пункт</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-mobile-box accordion">
+
+          <button class="footer-mobile-box__name accordion__control" type="button">Подборки ЖК
+            <span></span>
+          </button>
+
+          <div class="footer-mobile-box__content accordion__content">
+            <ul class="footer-mobile-box__list">
+              <li class="footer-mobile-box__item">
+                <a class="footer-mobile-box__link" href="#">Пункт</a>
+              </li>
+              <li class="footer-mobile-box__item">
+                <a class="footer-mobile-box__link" href="#">Пункт</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-mobile-box accordion">
+
+          <button class="footer-mobile-box__name accordion__control" type="button">О нас
+            <span></span>
+          </button>
+
+          <div class="footer-mobile-box__content accordion__content">
+            <ul class="footer-mobile-box__list">
+              <li class="footer-mobile-box__item">
+                <a class="footer-mobile-box__link" href="#">Пункт</a>
+              </li>
+              <li class="footer-mobile-box__item">
+                <a class="footer-mobile-box__link" href="#">Пункт</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-mobile__middle">
+        <ul class="footer-mobile__list">
+          <li class="footer-mobile__item">
+            <a class="footer-mobile__link" href="#">Наши работы</a>
+          </li>
+          <li class="footer-mobile__item">
+            <a class="footer-mobile__link" href="#">Карьера</a>
+          </li>
+          <li class="footer-mobile__item">
+            <a class="footer-mobile__link" href="#">Сотрудничество</a>
+          </li>
+          <li class="footer-mobile__item">
+            <a class="footer-mobile__link" href="#">Блог</a>
+          </li>
+          <li class="footer-mobile__item">
+            <a class="footer-mobile__link" href="#">Контакты</a>
+          </li>
+        </ul>
+
+        <a class="footer-mobile__phone" href="tel:+74950323033">+7(495) 032-30-33</a>
+
+        <address class="footer-mobile__address">
+          <p>БЦ Neo Geo, г. Москва, <br> ул. Бутлерова 17</p>
+        </address>
+      </div>
+      <div class="footer-mobile__bottom">
+        <div class="footer-mobile__data">
+          <a class="footer-mobile__privacy-link" href="#">Политика конфиденциальности</a>
+          <a class="footer-mobile__map-link" href="#">Карта сайта</a>
+        </div>
+
+        <a class="footer-mobile__telegram" href="#">
+          <span>Получайте новости</span> <span> о ЖК в нашем</span> <span>Telegram канале</span>
+        </a>
+        <div class="footer-mobile__img">
+          <img src="images/content/footer/phone.png" alt="Телефон">
+        </div>
+      </div>
+
+    </div>
+  </div>
+</footer>
+  </div>
+
+    <!-- Swiper JS -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  <!-- nouislider -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.5.0/nouislider.min.js"></script>
+
+  <!-- jQuery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+  <!-- jQueryFormStyler -->
+  <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+
+  <!-- wSelect -->
+  <script src="js/wSelect.min.js"></script>
+
+  <!-- Simple Bar -->
+  <script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
+  
+  <!-- MixitUp JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.1/mixitup.min.js"></script>
+  <!-- JS -->
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>

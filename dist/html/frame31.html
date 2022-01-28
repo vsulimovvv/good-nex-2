@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  @include('./components/base/_meta.html')
+  @include('./components/base/_links.html')
+
+  <title>Goodnex</title>
+</head>
+
+<body>
+  <h1 aria-label="Объекты с фильтрами"></h1>
+  <div class="overlay"></div>
+  <div class="site-wrapper">
+    @include('./components/_header.html')
+    <main class="main">
+      @include('./components/frame31/_section-object-filters.html')
+      @include('./components/_section-question.html')
+    </main>
+    @include('./components/_footer.html')
+  </div>
+
+  @include('./components/base/_scripts.html')
+</body>
+
+</html>

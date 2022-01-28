@@ -1,0 +1,430 @@
+<section class="hero" style="background-image: url('images/content/hero/bg-2.jpg');">
+  <div class="container">
+    <div class="hero__slider">
+
+      <button class="swiper-button-next" type="button" aria-label="Следуйющий слайд"></button>
+      <button class="swiper-button-prev" type="button" aria-label="Предыдущий слайд"></button>
+
+      <div class="slider-hero swiper">
+        <ul class="hero__slides swiper-wrapper">
+          <li class="swiper-slide">
+            <div class="hero__offer">
+              <h1 class="hero__title"><span class="color-accent">Бесплатно</span> подберем квартиру <br> в новостройке
+                <br>
+                <span class="hero__relative"> Москвы <small class="hero__undertitle">от застройщика</small></span>
+              </h1>
+            </div>
+
+            <form class="form">
+              <div class="hero__selected filters">
+                <ul class="filters__list">
+                  <li class="filters__item filter-card">
+                    <div class="filters__img">
+                      <svg>
+                        <use xlink:href="images/icons/map-icon.svg"></use>
+                      </svg>
+                    </div>
+                    <div class="filters__select">
+                      <select class="select" name="area" id="area">
+                        <option value="district">Район</option>
+                        <option value="cao">ЦАО</option>
+                        <option value="nw">Северо-Запад</option>
+                        <option value="sw">Юго-Запад</option>
+                        <option value="se">Юго-Восток</option>
+                        <option value="ne">Северо-Восток</option>
+                      </select>
+                    </div>
+                  </li>
+                  <li class="filters__item filter-card">
+                    <div class="filters__img">
+                      <svg>
+                        <use xlink:href="images/sprite.svg#metro"></use>
+                      </svg>
+                    </div>
+                    <div class="filters__select">
+                      <select class="select" data-select="metro" name="metro" id="metro">
+                        <option value="metro">Метро</option>
+                        <option value="china-country">Китай-Страна</option>
+                        <option value="china-town">Китай-Город</option>
+                      </select>
+                    </div>
+                  </li>
+                  <li class="filters__item filter-card">
+                    <div class="filters__img">
+                      <svg>
+                        <use xlink:href="images/sprite.svg#class"></use>
+                      </svg>
+                    </div>
+                    <div class="filters__select">
+                      <select class="select" name="type" id="type">
+                        <option value="class">Класс ЖК</option>
+                        <option value="business">Бизнес</option>
+                        <option value="economy">Эконом</option>
+                      </select>
+                    </div>
+                  </li>
+                  <li class="filters__item filter-card">
+                    <div class="filters__img">
+                      <svg>
+                        <use xlink:href="images/sprite.svg#key"></use>
+                      </svg>
+                    </div>
+                    <div class="filters__select">
+                      <select class="select" name="area" id="rental">
+                        <option value="passed obj">Сдача ЖК</option>
+                        <option value="passed">Сдан</option>
+                        <option value="not passed">Не сдан</option>
+                      </select>
+                    </div>
+                  </li>
+                  <li class="filters__item filters__item--big filter-card">
+                    <div class="filters__img">
+                      <svg>
+                        <use xlink:href="images/sprite.svg#rub"></use>
+                      </svg>
+                    </div>
+                    <div class="filters__slider ">
+                      <div class="filter-slider">
+                        <p class="filter-slider__text">Цена <span>14 млн - 22 млн</span>
+                        </p>
+                        <div class="filter-slider__inputs">
+                          <label class="filter-slider__label">
+                            <input class="filter-slider__input" type="number" min="14000000" max="22000000"
+                              id="price-input-1">
+                          </label>
+                          <label class="filter-slider__label">
+                            <input class="filter-slider__input" type="number" min="14000000" max="22000000"
+                              id="price-input-2">
+                          </label>
+                        </div>
+                        <div class="filter-slider__slider range-slider range-slider--price" id="range-slider"></div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="filters__item filters__item--big filter-card">
+                    <div class="filters__img">
+                      <svg>
+                        <use xlink:href="images/sprite.svg#area"></use>
+                      </svg>
+                    </div>
+                    <div class="filters__slider ">
+                      <div class="filter-slider">
+                        <p class="filter-slider__text">Площадь <span>40 м - 80 м</span>
+                        </p>
+                        <div class="filter-slider__inputs">
+                          <label class="filter-slider__label">
+                            <input class="filter-slider__input" type="number" min="40" max="80" id="area-input-1">
+                          </label>
+                          <label class="filter-slider__label">
+                            <input class="filter-slider__input" type="number" min="40" max="80" id="area-input-2">
+                          </label>
+                        </div>
+                        <div class="filter-slider__slider range-slider range-slider--area" id="range-slider2"></div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="filters__item filter-card">
+                    <div class="filters__img">
+                      <svg>
+                        <use xlink:href="images/sprite.svg#finishing"></use>
+                      </svg>
+                    </div>
+                    <div class="filters__select">
+                      <select class="select" name="finishing" id="finishing">
+                        <option value="Finnishing">Отделка</option>
+                        <option value="White box">White box</option>
+                        <option value="Black box">Black box</option>
+                      </select>
+                    </div>
+                  </li>
+                </ul>
+
+                <div class="filters__bottom">
+                  <button class="filters__btn btn" type="submit">Найти</button>
+                  <a class="filters__link" href="#">Бесплатный подбор</a>
+                </div>
+              </div>
+            </form>
+          </li>
+          <li class="swiper-slide">
+            <div class="hero__offer">
+              <h1 class="hero__title"><span class="color-accent">Бесплатно</span> подберем квартиру <br> в новостройке
+                <br>
+                <span class="hero__relative"> Москвы <small class="hero__undertitle">от застройщика</small></span>
+              </h1>
+            </div>
+
+            <form class="form">
+              <div class="hero__selected filters">
+                <ul class="filters__list">
+                  <li class="filters__item filter-card">
+                    <div class="filters__img">
+                      <svg>
+                        <use xlink:href="images/icons/map-icon.svg"></use>
+                      </svg>
+                    </div>
+                    <div class="filters__select">
+                      <select class="select select-area-2" name="area" id="">
+                        <option value="district">Район</option>
+                        <option value="cao">ЦАО</option>
+                        <option value="nw">Северо-Запад</option>
+                        <option value="sw">Юго-Запад</option>
+                        <option value="se">Юго-Восток</option>
+                        <option value="ne">Северо-Восток</option>
+                      </select>
+                    </div>
+                  </li>
+                  <li class="filters__item filter-card">
+                    <div class="filters__img">
+                      <svg>
+                        <use xlink:href="images/sprite.svg#metro"></use>
+                      </svg>
+                    </div>
+                    <div class="filters__select">
+                      <select class="select select-metro-2" data-select="metro" name="metro" id="">
+                        <option value="metro">Метро</option>
+                        <option value="china-country">Китай-Страна</option>
+                        <option value="china-town">Китай-Город</option>
+                      </select>
+                    </div>
+                  </li>
+                  <li class="filters__item filter-card">
+                    <div class="filters__img">
+                      <svg>
+                        <use xlink:href="images/sprite.svg#class"></use>
+                      </svg>
+                    </div>
+                    <div class="filters__select">
+                      <select class="select select-type-2" name="type" id="">
+                        <option value="class">Класс ЖК</option>
+                        <option value="business">Бизнес</option>
+                        <option value="economy">Эконом</option>
+                      </select>
+                    </div>
+                  </li>
+                  <li class="filters__item filter-card">
+                    <div class="filters__img">
+                      <svg>
+                        <use xlink:href="images/sprite.svg#key"></use>
+                      </svg>
+                    </div>
+                    <div class="filters__select">
+                      <select class="select select-pass-2" name="pass" id="">
+                        <option value="passed obj">Сдача ЖК</option>
+                        <option value="passed">Сдан</option>
+                        <option value="not passed">Не сдан</option>
+                      </select>
+                    </div>
+                  </li>
+                  <li class="filters__item filters__item--big filter-card">
+                    <div class="filters__img">
+                      <svg>
+                        <use xlink:href="images/sprite.svg#rub"></use>
+                      </svg>
+                    </div>
+                    <div class="filters__slider ">
+                      <div class="filter-slider">
+                        <p class="filter-slider__text">Цена <span>14 млн - 22 млн</span>
+                        </p>
+                        <div class="filter-slider__inputs">
+                          <label class="filter-slider__label">
+                            <input class="filter-slider__input" type="number" min="14000000" max="22000000"
+                              id="price-input-1">
+                          </label>
+                          <label class="filter-slider__label">
+                            <input class="filter-slider__input" type="number" min="14000000" max="22000000"
+                              id="price-input-2">
+                          </label>
+                        </div>
+                        <div class="filter-slider__slider range-slider range-slider--price" id="range-slider"></div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="filters__item filters__item--big filter-card">
+                    <div class="filters__img">
+                      <svg>
+                        <use xlink:href="images/sprite.svg#area"></use>
+                      </svg>
+                    </div>
+                    <div class="filters__slider ">
+                      <div class="filter-slider">
+                        <p class="filter-slider__text">Площадь <span>40 м - 80 м</span>
+                        </p>
+                        <div class="filter-slider__inputs">
+                          <label class="filter-slider__label">
+                            <input class="filter-slider__input" type="number" min="40" max="80" id="area-input-1">
+                          </label>
+                          <label class="filter-slider__label">
+                            <input class="filter-slider__input" type="number" min="40" max="80" id="area-input-2">
+                          </label>
+                        </div>
+                        <div class="filter-slider__slider range-slider range-slider--area" id="range-slider2"></div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="filters__item filter-card">
+                    <div class="filters__img">
+                      <svg>
+                        <use xlink:href="images/sprite.svg#finishing"></use>
+                      </svg>
+                    </div>
+                    <div class="filters__select">
+                      <select class="select select-finishing-2" name="finishing" id="">
+                        <option value="Finnishing">Отделка</option>
+                        <option value="White box">White box</option>
+                        <option value="Black box">Black box</option>
+                      </select>
+                    </div>
+                  </li>
+                </ul>
+
+                <div class="filters__bottom">
+                  <button class="filters__btn btn" type="submit">Найти</button>
+                  <a class="filters__link" href="#">Бесплатный подбор</a>
+                </div>
+              </div>
+            </form>
+          </li>
+          <li class="swiper-slide">
+            <div class="hero__offer">
+              <h1 class="hero__title"><span class="color-accent">Бесплатно</span> подберем квартиру <br> в новостройке
+                <br>
+                <span class="hero__relative"> Москвы <small class="hero__undertitle">от застройщика</small></span>
+              </h1>
+            </div>
+            <form class="form">
+              <div class="hero__selected filters">
+                <ul class="filters__list">
+                  <li class="filters__item filter-card">
+                    <div class="filters__img">
+                      <svg>
+                        <use xlink:href="images/icons/map-icon.svg"></use>
+                      </svg>
+                    </div>
+                    <div class="filters__select">
+                      <select class="select select-area-3" name="area" id="">
+                        <option value="district">Район</option>
+                        <option value="cao">ЦАО</option>
+                        <option value="nw">Северо-Запад</option>
+                        <option value="sw">Юго-Запад</option>
+                        <option value="se">Юго-Восток</option>
+                        <option value="ne">Северо-Восток</option>
+                      </select>
+                    </div>
+                  </li>
+                  <li class="filters__item filter-card">
+                    <div class="filters__img">
+                      <svg>
+                        <use xlink:href="images/sprite.svg#metro"></use>
+                      </svg>
+                    </div>
+                    <div class="filters__select">
+                      <select class="select select-metro-3" name="metro" id="">
+                        <option value="metro">Метро</option>
+                        <option value="china-country">Китай-Страна</option>
+                        <option value="china-town">Китай-Город</option>
+                      </select>
+                    </div>
+                  </li>
+                  <li class="filters__item filter-card">
+                    <div class="filters__img">
+                      <svg>
+                        <use xlink:href="images/sprite.svg#class"></use>
+                      </svg>
+                    </div>
+                    <div class="filters__select">
+                      <select class="select select-type-3" name="type" id="">
+                        <option value="class">Класс ЖК</option>
+                        <option value="business">Бизнес</option>
+                        <option value="economy">Эконом</option>
+                      </select>
+                    </div>
+                  </li>
+                  <li class="filters__item filter-card">
+                    <div class="filters__img">
+                      <svg>
+                        <use xlink:href="images/sprite.svg#key"></use>
+                      </svg>
+                    </div>
+                    <div class="filters__select">
+                      <select class="select select-pass-3" name="pass" id="">
+                        <option value="passed obj">Сдача ЖК</option>
+                        <option value="passed">Сдан</option>
+                        <option value="not passed">Не сдан</option>
+                      </select>
+                    </div>
+                  </li>
+                  <li class="filters__item filters__item--big filter-card">
+                    <div class="filters__img">
+                      <svg>
+                        <use xlink:href="images/sprite.svg#rub"></use>
+                      </svg>
+                    </div>
+                    <div class="filters__slider ">
+                      <div class="filter-slider">
+                        <p class="filter-slider__text">Цена <span>14 млн - 22 млн</span>
+                        </p>
+                        <div class="filter-slider__inputs">
+                          <label class="filter-slider__label">
+                            <input class="filter-slider__input" type="number" min="14000000" max="22000000"
+                              id="price-input-1">
+                          </label>
+                          <label class="filter-slider__label">
+                            <input class="filter-slider__input" type="number" min="14000000" max="22000000"
+                              id="price-input-2">
+                          </label>
+                        </div>
+                        <div class="filter-slider__slider range-slider range-slider--price" id="range-slider"></div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="filters__item filters__item--big filter-card">
+                    <div class="filters__img">
+                      <svg>
+                        <use xlink:href="images/sprite.svg#area"></use>
+                      </svg>
+                    </div>
+                    <div class="filters__slider ">
+                      <div class="filter-slider">
+                        <p class="filter-slider__text">Площадь <span>40 м - 80 м</span>
+                        </p>
+                        <div class="filter-slider__inputs">
+                          <label class="filter-slider__label">
+                            <input class="filter-slider__input" type="number" min="40" max="80" id="area-input-1">
+                          </label>
+                          <label class="filter-slider__label">
+                            <input class="filter-slider__input" type="number" min="40" max="80" id="area-input-2">
+                          </label>
+                        </div>
+                        <div class="filter-slider__slider range-slider range-slider--area" id="range-slider2"></div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="filters__item filter-card">
+                    <div class="filters__img">
+                      <svg>
+                        <use xlink:href="images/sprite.svg#finishing"></use>
+                      </svg>
+                    </div>
+                    <div class="filters__select">
+                      <select class="select select-finishing-3" name="finishing" id="">
+                        <option value="Finnishing">Отделка</option>
+                        <option value="White box">White box</option>
+                        <option value="Black box">Black box</option>
+                      </select>
+                    </div>
+                  </li>
+                </ul>
+
+                <div class="filters__bottom">
+                  <button class="filters__btn btn" type="submit">Найти</button>
+                  <a class="filters__link" href="#">Бесплатный подбор</a>
+                </div>
+              </div>
+            </form>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>

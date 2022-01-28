@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  @include('./components/base/_meta.html')
+  @include('./components/base/_links.html')
+
+  <title>Главная</title>
+</head>
+
+<body>
+  @include('./components/popups/_popup.html')
+
+  <div class="overlay"></div>
+  <div class="site-wrapper">
+    @include('./components/_header.html')
+    <main class="main">
+      @include('./components/_section-hero.html')
+      @include('./components/_section-objects.html')
+      @include('./components/_section-download.html')
+      @include('./components/_section-catalog.html')
+      @include('./components/_section-selection.html')
+      @include('./components/_section-team.html')
+      @include('./components/_section-advantages.html')
+      @include('./components/_section-works.html')
+      @include('./components/_section-blog.html')
+      @include('./components/_section-question.html')
+    </main>
+    @include('./components/_footer.html')
+  </div>
+
+  @include('./components/base/_scripts.html')
+</body>
+
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  @include('./components/base/_meta.html')
+  @include('./components/base/_links.html')
+
+  <title>Кейс</title>
+</head>
+
+<body>
+  @include('./components/popups/_popup.html')
+  <div class="overlay"></div>
+  <div class="site-wrapper">
+    @include('./components/_header-bg.html')
+
+    <div class="breadcrumbs">
+      <div class="container">
+        <ul class="breadcrumbs__list">
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link">
+              хлебные крошки
+            </a>
+          </li>
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link breadcrumbs__link--active" href="#">
+              хлебные крошки
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <main class="main">
+      @include('./components/case/_section-appartment.html')
+      @include('./components/case/_section-about-project.html')
+      @include('./components/case/_section-customer-request.html')
+      @include('./components/case/_section-our-job.html')
+      @include('./components/case/_section-new-appartment.html')
+      @include('./components/case/_section-customer-reviews.html')
+      @include('./components/case/_section-free-selection.html')
+      @include('./components/case/_section-other-projects.html')
+      @include('./components/_section-question.html')
+    </main>
+    @include('./components/_footer.html')
+  </div>
+
+  @include('./components/base/_scripts.html')
+</body>
+
+</html>
