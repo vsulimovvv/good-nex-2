@@ -1,105 +1,85 @@
 <div class="catalog-filters">
   <div class="container">
     <h1 class="catalog-filters__title section-title">каталог жк по вашим параметрам</h1>
+
     <div class="catalog-filters__selection filters pb70">
       <ul class="filters__list">
-        <li class="filters__item filter-card">
-          <div class="filters__img">
-            <img src="images/icons/location.svg" alt="Район">
-          </div>
-          <div class="filters__select">
+        <li class="filters__item filter-block">
+          <div class="filter-block__select">
             <select class="select" name="area" id="area">
-              <option value="Район">Район</option>
-              <option value="Район">ЦАО</option>
-              <option value="Район">ЦАО</option>
+              <option value="district">Район</option>
+              <option value="cao">ЦАО</option>
+              <option value="nw">Северо-Запад</option>
+              <option value="sw">Юго-Запад</option>
+              <option value="se">Юго-Восток</option>
+              <option value="ne">Северо-Восток</option>
             </select>
           </div>
         </li>
-        <li class="filters__item filter-card">
-          <div class="filters__img">
-            <img src="images/icons/metro.svg" alt="Метро">
-          </div>
-          <div class="filters__select">
-            <select class="select" name="metro" id="metro">
-              <option value="Район">Метро</option>
-              <option value="Район">Китай-Город</option>
-              <option value="Район">Китай-Город</option>
+        <li class="filters__item filter-block">
+          <div class="filter-block__select">
+            <select class="select" data-select="metro" name="metro" id="metro">
+              <option value="metro">Метро</option>
+              <option value="china-country">Китай-Страна</option>
+              <option value="china-town">Китай-Город</option>
             </select>
           </div>
         </li>
-        <li class="filters__item filter-card">
-          <div class="filters__img">
-            <img src="images/icons/class.svg" alt="Класс">
-          </div>
-          <div class="filters__select">
+        <li class="filters__item filter-block">
+          <div class="filter-block__select">
             <select class="select" name="type" id="type">
-              <option value="Район">Класс ЖК</option>
-              <option value="Район">Бизнес</option>
-              <option value="Район">Эконом</option>
+              <option value="class">Класс ЖК</option>
+              <option value="business">Бизнес</option>
+              <option value="economy">Эконом</option>
             </select>
           </div>
         </li>
-        <li class="filters__item filter-card">
-          <div class="filters__img">
-            <img src="images/icons/key.svg" alt="Сдача">
-          </div>
-          <div class="filters__select">
-            <select class="select" name="rental" id="rental">
-              <option value="Район">Сдача ЖК</option>
-              <option value="Район">Сдан</option>
-              <option value="Район">Не сдан</option>
+        <li class="filters__item filter-block">
+          <div class="filter-block__select">
+            <select class="select" name="area" id="rental">
+              <option value="passed obj">Сдача ЖК</option>
+              <option value="passed">Сдан</option>
+              <option value="not passed">Не сдан</option>
             </select>
           </div>
         </li>
-        <li class="filters__item filters__item--big filter-card">
-          <div class="filters__img">
-            <img src="images/icons/rub.svg" alt="Цена">
-          </div>
-          <div class="filters__slider ">
-            <div class="filter-slider">
-              <p class="filter-slider__text">Цена <span>14 млн - 22 млн</span>
-              </p>
-              <div class="filter-slider__inputs">
-                <label class="filter-slider__label">
-                  <input class="filter-slider__input" type="number" min="14000000" max="22000000" id="price-input-1">
-                </label>
-                <label class="filter-slider__label">
-                  <input class="filter-slider__input" type="number" min="14000000" max="22000000" id="price-input-2">
-                </label>
-              </div>
-              <div class="filter-slider__slider range-slider range-slider--price" id="range-slider"></div>
+        <li class="filters__item filter-block filter-block--slider">
+          <div class="filter-block__slider">
+            <p class="filter-block__slider-text">Цена <span>14 млн - 22 млн</span>
+            </p>
+            <div class="filter-block__inputs">
+              <label class="filter-block__label">
+                <input class="filter-block__input" type="number" min="14000000" max="22000000" id="price-input-1">
+              </label>
+              <label class="filter-block__label">
+                <input class="filter-block__input" type="number" min="14000000" max="22000000" id="price-input-2">
+              </label>
             </div>
+            <div class="filter-block__range range-slider range-slider--price" id="range-slider"></div>
           </div>
         </li>
-        <li class="filters__item filters__item--big filter-card">
-          <div class="filters__img">
-            <img src="images/icons/area.svg" alt="Площадь">
-          </div>
-          <div class="filters__slider ">
-            <div class="filter-slider">
-              <p class="filter-slider__text">Площадь <span>40 м - 80 м</span>
-              </p>
-              <div class="filter-slider__inputs">
-                <label class="filter-slider__label">
-                  <input class="filter-slider__input" type="number" min="40" max="80" id="area-input-1">
-                </label>
-                <label class="filter-slider__label">
-                  <input class="filter-slider__input" type="number" min="40" max="80" id="area-input-2">
-                </label>
-              </div>
-              <div class="filter-slider__slider range-slider range-slider--area" id="range-slider2"></div>
+        <li class="filters__item filter-block filter-block--slider">
+          <div class="filter-block__slider">
+            <p class="filter-block__slider-text">Площадь <span>40 м - 80 м</span>
+            </p>
+            <div class="filter-block__inputs">
+              <label class="filter-block__label">
+                <input class="filter-block__input" type="number" min="40" max="80" id="area-input-1">
+              </label>
+              <label class="filter-block__label">
+                <input class="filter-block__input" type="number" min="40" max="80" id="area-input-2">
+              </label>
             </div>
+            <div class="filter-block__range range-slider range-slider--area" id="range-slider2"></div>
+
           </div>
         </li>
-        <li class="filters__item filter-card">
-          <div class="filters__img">
-            <img src="images/icons/finishing.svg" alt="Отделка">
-          </div>
-          <div class="filters__select">
+        <li class="filters__item filter-block">
+          <div class="filter-block__select">
             <select class="select" name="finishing" id="finishing">
-              <option value="Район">Отделка</option>
-              <option value="Район">White box</option>
-              <option value="Район">Black box</option>
+              <option value="Finnishing">Отделка</option>
+              <option value="White box">White box</option>
+              <option value="Black box">Black box</option>
             </select>
           </div>
         </li>
