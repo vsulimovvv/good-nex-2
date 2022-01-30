@@ -19,11 +19,6 @@
               <div class="hero__selected filters">
                 <ul class="filters__list">
                   <li class="filters__item filter-block">
-                    <div class="filter-block__img">
-                      <svg width="28" height="28">
-                        <use xlink:href="images/icons/location.svg"></use>
-                      </svg>
-                    </div>
                     <div class="filter-block__select">
                       <select class="select" name="area" id="area">
                         <option value="district">Район</option>
@@ -36,11 +31,6 @@
                     </div>
                   </li>
                   <li class="filters__item filter-block">
-                    <div class="filter-block__img">
-                      <svg width="28" height="28">
-                        <use xlink:href="images/sprite.svg#metro"></use>
-                      </svg>
-                    </div>
                     <div class="filter-block__select">
                       <select class="select" data-select="metro" name="metro" id="metro">
                         <option value="metro">Метро</option>
@@ -50,11 +40,6 @@
                     </div>
                   </li>
                   <li class="filters__item filter-block">
-                    <div class="filter-block__img">
-                      <svg width="28" height="28">
-                        <use xlink:href="images/sprite.svg#class"></use>
-                      </svg>
-                    </div>
                     <div class="filter-block__select">
                       <select class="select" name="type" id="type">
                         <option value="class">Класс ЖК</option>
@@ -64,11 +49,6 @@
                     </div>
                   </li>
                   <li class="filters__item filter-block">
-                    <div class="filter-block__img">
-                      <svg width="28" height="28">
-                        <use xlink:href="images/sprite.svg#key"></use>
-                      </svg>
-                    </div>
                     <div class="filter-block__select">
                       <select class="select" name="area" id="rental">
                         <option value="passed obj">Сдача ЖК</option>
@@ -78,57 +58,39 @@
                     </div>
                   </li>
                   <li class="filters__item filter-block filter-block--slider">
-                    <div class="filter-block__img">
-                      <svg width="28" height="28">
-                        <use xlink:href="images/sprite.svg#rub"></use>
-                      </svg>
-                    </div>
-                    <div class="filters__slider filter-block__slider">
-                      <div class="filter-slider">
-                        <p class="filter-slider__text">Цена <span>14 млн - 22 млн</span>
-                        </p>
-                        <div class="filter-slider__inputs">
-                          <label class="filter-slider__label">
-                            <input class="filter-slider__input" type="number" min="14000000" max="22000000"
-                              id="price-input-1">
-                          </label>
-                          <label class="filter-slider__label">
-                            <input class="filter-slider__input" type="number" min="14000000" max="22000000"
-                              id="price-input-2">
-                          </label>
-                        </div>
-                        <div class="filter-slider__slider range-slider range-slider--price" id="range-slider"></div>
+                    <div class="filter-block__slider">
+                      <p class="filter-block__slider-text">Цена <span>14 млн - 22 млн</span>
+                      </p>
+                      <div class="filter-block__inputs">
+                        <label class="filter-block__label">
+                          <input class="filter-block__input" type="number" min="14000000" max="22000000"
+                            id="price-input-1">
+                        </label>
+                        <label class="filter-block__label">
+                          <input class="filter-block__input" type="number" min="14000000" max="22000000"
+                            id="price-input-2">
+                        </label>
                       </div>
+                      <div class="filter-block__range range-slider range-slider--price" id="range-slider"></div>
                     </div>
                   </li>
                   <li class="filters__item filter-block filter-block--slider">
-                    <div class="filter-block__img">
-                      <svg width="28" height="28">
-                        <use xlink:href="images/sprite.svg#area"></use>
-                      </svg>
-                    </div>
-                    <div class="filters__slider filter-block__slider">
-                      <div class="filter-slider">
-                        <p class="filter-slider__text">Площадь <span>40 м - 80 м</span>
-                        </p>
-                        <div class="filter-slider__inputs">
-                          <label class="filter-slider__label">
-                            <input class="filter-slider__input" type="number" min="40" max="80" id="area-input-1">
-                          </label>
-                          <label class="filter-slider__label">
-                            <input class="filter-slider__input" type="number" min="40" max="80" id="area-input-2">
-                          </label>
-                        </div>
-                        <div class="filter-slider__slider range-slider range-slider--area" id="range-slider2"></div>
+                    <div class="filter-block__slider">
+                      <p class="filter-block__slider-text">Площадь <span>40 м - 80 м</span>
+                      </p>
+                      <div class="filter-block__inputs">
+                        <label class="filter-block__label">
+                          <input class="filter-block__input" type="number" min="40" max="80" id="area-input-1">
+                        </label>
+                        <label class="filter-block__label">
+                          <input class="filter-block__input" type="number" min="40" max="80" id="area-input-2">
+                        </label>
                       </div>
+                      <div class="filter-block__range range-slider range-slider--area" id="range-slider2"></div>
+
                     </div>
                   </li>
                   <li class="filters__item filter-block">
-                    <div class="filter-block__img">
-                      <svg width="28" height="28">
-                        <use xlink:href="images/sprite.svg#finishing"></use>
-                      </svg>
-                    </div>
                     <div class="filter-block__select">
                       <select class="select" name="finishing" id="finishing">
                         <option value="Finnishing">Отделка</option>
@@ -157,14 +119,9 @@
             <form class="form">
               <div class="hero__selected filters">
                 <ul class="filters__list">
-                  <li class="filters__item filter-card">
-                    <div class="filters__img">
-                      <svg>
-                        <use xlink:href="images/icons/map-icon.svg"></use>
-                      </svg>
-                    </div>
-                    <div class="filters__select">
-                      <select class="select select-area-2" name="area" id="">
+                  <li class="filters__item filter-block">
+                    <div class="filter-block__select">
+                      <select class="select" name="area" id="area">
                         <option value="district">Район</option>
                         <option value="cao">ЦАО</option>
                         <option value="nw">Северо-Запад</option>
@@ -174,102 +131,69 @@
                       </select>
                     </div>
                   </li>
-                  <li class="filters__item filter-card">
-                    <div class="filters__img">
-                      <svg>
-                        <use xlink:href="images/sprite.svg#metro"></use>
-                      </svg>
-                    </div>
-                    <div class="filters__select">
-                      <select class="select select-metro-2" data-select="metro" name="metro" id="">
+                  <li class="filters__item filter-block">
+                    <div class="filter-block__select">
+                      <select class="select" data-select="metro" name="metro" id="metro">
                         <option value="metro">Метро</option>
                         <option value="china-country">Китай-Страна</option>
                         <option value="china-town">Китай-Город</option>
                       </select>
                     </div>
                   </li>
-                  <li class="filters__item filter-card">
-                    <div class="filters__img">
-                      <svg>
-                        <use xlink:href="images/sprite.svg#class"></use>
-                      </svg>
-                    </div>
-                    <div class="filters__select">
-                      <select class="select select-type-2" name="type" id="">
+                  <li class="filters__item filter-block">
+                    <div class="filter-block__select">
+                      <select class="select" name="type" id="type">
                         <option value="class">Класс ЖК</option>
                         <option value="business">Бизнес</option>
                         <option value="economy">Эконом</option>
                       </select>
                     </div>
                   </li>
-                  <li class="filters__item filter-card">
-                    <div class="filters__img">
-                      <svg>
-                        <use xlink:href="images/sprite.svg#key"></use>
-                      </svg>
-                    </div>
-                    <div class="filters__select">
-                      <select class="select select-pass-2" name="pass" id="">
+                  <li class="filters__item filter-block">
+                    <div class="filter-block__select">
+                      <select class="select" name="area" id="rental">
                         <option value="passed obj">Сдача ЖК</option>
                         <option value="passed">Сдан</option>
                         <option value="not passed">Не сдан</option>
                       </select>
                     </div>
                   </li>
-                  <li class="filters__item filters__item--big filter-card">
-                    <div class="filters__img">
-                      <svg>
-                        <use xlink:href="images/sprite.svg#rub"></use>
-                      </svg>
-                    </div>
-                    <div class="filters__slider ">
-                      <div class="filter-slider">
-                        <p class="filter-slider__text">Цена <span>14 млн - 22 млн</span>
-                        </p>
-                        <div class="filter-slider__inputs">
-                          <label class="filter-slider__label">
-                            <input class="filter-slider__input" type="number" min="14000000" max="22000000"
-                              id="price-input-1">
-                          </label>
-                          <label class="filter-slider__label">
-                            <input class="filter-slider__input" type="number" min="14000000" max="22000000"
-                              id="price-input-2">
-                          </label>
-                        </div>
-                        <div class="filter-slider__slider range-slider range-slider--price" id="range-slider"></div>
+                  <li class="filters__item filter-block filter-block--slider">
+                    <div class="filter-block__slider">
+                      <p class="filter-block__slider-text">Цена <span>14 млн - 22 млн</span>
+                      </p>
+                      <div class="filter-block__inputs">
+                        <label class="filter-block__label">
+                          <input class="filter-block__input" type="number" min="14000000" max="22000000"
+                            id="price-input-1">
+                        </label>
+                        <label class="filter-block__label">
+                          <input class="filter-block__input" type="number" min="14000000" max="22000000"
+                            id="price-input-2">
+                        </label>
                       </div>
+                      <div class="filter-block__range range-slider range-slider--price" id="range-slider"></div>
                     </div>
                   </li>
-                  <li class="filters__item filters__item--big filter-card">
-                    <div class="filters__img">
-                      <svg>
-                        <use xlink:href="images/sprite.svg#area"></use>
-                      </svg>
-                    </div>
-                    <div class="filters__slider ">
-                      <div class="filter-slider">
-                        <p class="filter-slider__text">Площадь <span>40 м - 80 м</span>
-                        </p>
-                        <div class="filter-slider__inputs">
-                          <label class="filter-slider__label">
-                            <input class="filter-slider__input" type="number" min="40" max="80" id="area-input-1">
-                          </label>
-                          <label class="filter-slider__label">
-                            <input class="filter-slider__input" type="number" min="40" max="80" id="area-input-2">
-                          </label>
-                        </div>
-                        <div class="filter-slider__slider range-slider range-slider--area" id="range-slider2"></div>
+                  <li class="filters__item filter-block filter-block--slider">
+                    <div class="filter-block__slider">
+                      <p class="filter-block__slider-text">Площадь <span>40 м - 80 м</span>
+                      </p>
+                      <div class="filter-block__inputs">
+                        <label class="filter-block__label">
+                          <input class="filter-block__input" type="number" min="40" max="80" id="area-input-1">
+                        </label>
+                        <label class="filter-block__label">
+                          <input class="filter-block__input" type="number" min="40" max="80" id="area-input-2">
+                        </label>
                       </div>
+                      <div class="filter-block__range range-slider range-slider--area" id="range-slider2"></div>
+
                     </div>
                   </li>
-                  <li class="filters__item filter-card">
-                    <div class="filters__img">
-                      <svg>
-                        <use xlink:href="images/sprite.svg#finishing"></use>
-                      </svg>
-                    </div>
-                    <div class="filters__select">
-                      <select class="select select-finishing-2" name="finishing" id="">
+                  <li class="filters__item filter-block">
+                    <div class="filter-block__select">
+                      <select class="select" name="finishing" id="finishing">
                         <option value="Finnishing">Отделка</option>
                         <option value="White box">White box</option>
                         <option value="Black box">Black box</option>
@@ -292,17 +216,13 @@
                 <span class="hero__relative"> Москвы <small class="hero__undertitle">от застройщика</small></span>
               </h1>
             </div>
+            
             <form class="form">
               <div class="hero__selected filters">
                 <ul class="filters__list">
-                  <li class="filters__item filter-card">
-                    <div class="filters__img">
-                      <svg>
-                        <use xlink:href="images/icons/map-icon.svg"></use>
-                      </svg>
-                    </div>
-                    <div class="filters__select">
-                      <select class="select select-area-3" name="area" id="">
+                  <li class="filters__item filter-block">
+                    <div class="filter-block__select">
+                      <select class="select" name="area" id="area">
                         <option value="district">Район</option>
                         <option value="cao">ЦАО</option>
                         <option value="nw">Северо-Запад</option>
@@ -312,102 +232,69 @@
                       </select>
                     </div>
                   </li>
-                  <li class="filters__item filter-card">
-                    <div class="filters__img">
-                      <svg>
-                        <use xlink:href="images/sprite.svg#metro"></use>
-                      </svg>
-                    </div>
-                    <div class="filters__select">
-                      <select class="select select-metro-3" name="metro" id="">
+                  <li class="filters__item filter-block">
+                    <div class="filter-block__select">
+                      <select class="select" data-select="metro" name="metro" id="metro">
                         <option value="metro">Метро</option>
                         <option value="china-country">Китай-Страна</option>
                         <option value="china-town">Китай-Город</option>
                       </select>
                     </div>
                   </li>
-                  <li class="filters__item filter-card">
-                    <div class="filters__img">
-                      <svg>
-                        <use xlink:href="images/sprite.svg#class"></use>
-                      </svg>
-                    </div>
-                    <div class="filters__select">
-                      <select class="select select-type-3" name="type" id="">
+                  <li class="filters__item filter-block">
+                    <div class="filter-block__select">
+                      <select class="select" name="type" id="type">
                         <option value="class">Класс ЖК</option>
                         <option value="business">Бизнес</option>
                         <option value="economy">Эконом</option>
                       </select>
                     </div>
                   </li>
-                  <li class="filters__item filter-card">
-                    <div class="filters__img">
-                      <svg>
-                        <use xlink:href="images/sprite.svg#key"></use>
-                      </svg>
-                    </div>
-                    <div class="filters__select">
-                      <select class="select select-pass-3" name="pass" id="">
+                  <li class="filters__item filter-block">
+                    <div class="filter-block__select">
+                      <select class="select" name="area" id="rental">
                         <option value="passed obj">Сдача ЖК</option>
                         <option value="passed">Сдан</option>
                         <option value="not passed">Не сдан</option>
                       </select>
                     </div>
                   </li>
-                  <li class="filters__item filters__item--big filter-card">
-                    <div class="filters__img">
-                      <svg>
-                        <use xlink:href="images/sprite.svg#rub"></use>
-                      </svg>
-                    </div>
-                    <div class="filters__slider ">
-                      <div class="filter-slider">
-                        <p class="filter-slider__text">Цена <span>14 млн - 22 млн</span>
-                        </p>
-                        <div class="filter-slider__inputs">
-                          <label class="filter-slider__label">
-                            <input class="filter-slider__input" type="number" min="14000000" max="22000000"
-                              id="price-input-1">
-                          </label>
-                          <label class="filter-slider__label">
-                            <input class="filter-slider__input" type="number" min="14000000" max="22000000"
-                              id="price-input-2">
-                          </label>
-                        </div>
-                        <div class="filter-slider__slider range-slider range-slider--price" id="range-slider"></div>
+                  <li class="filters__item filter-block filter-block--slider">
+                    <div class="filter-block__slider">
+                      <p class="filter-block__slider-text">Цена <span>14 млн - 22 млн</span>
+                      </p>
+                      <div class="filter-block__inputs">
+                        <label class="filter-block__label">
+                          <input class="filter-block__input" type="number" min="14000000" max="22000000"
+                            id="price-input-1">
+                        </label>
+                        <label class="filter-block__label">
+                          <input class="filter-block__input" type="number" min="14000000" max="22000000"
+                            id="price-input-2">
+                        </label>
                       </div>
+                      <div class="filter-block__range range-slider range-slider--price" id="range-slider"></div>
                     </div>
                   </li>
-                  <li class="filters__item filters__item--big filter-card">
-                    <div class="filters__img">
-                      <svg>
-                        <use xlink:href="images/sprite.svg#area"></use>
-                      </svg>
-                    </div>
-                    <div class="filters__slider ">
-                      <div class="filter-slider">
-                        <p class="filter-slider__text">Площадь <span>40 м - 80 м</span>
-                        </p>
-                        <div class="filter-slider__inputs">
-                          <label class="filter-slider__label">
-                            <input class="filter-slider__input" type="number" min="40" max="80" id="area-input-1">
-                          </label>
-                          <label class="filter-slider__label">
-                            <input class="filter-slider__input" type="number" min="40" max="80" id="area-input-2">
-                          </label>
-                        </div>
-                        <div class="filter-slider__slider range-slider range-slider--area" id="range-slider2"></div>
+                  <li class="filters__item filter-block filter-block--slider">
+                    <div class="filter-block__slider">
+                      <p class="filter-block__slider-text">Площадь <span>40 м - 80 м</span>
+                      </p>
+                      <div class="filter-block__inputs">
+                        <label class="filter-block__label">
+                          <input class="filter-block__input" type="number" min="40" max="80" id="area-input-1">
+                        </label>
+                        <label class="filter-block__label">
+                          <input class="filter-block__input" type="number" min="40" max="80" id="area-input-2">
+                        </label>
                       </div>
+                      <div class="filter-block__range range-slider range-slider--area" id="range-slider2"></div>
+
                     </div>
                   </li>
-                  <li class="filters__item filter-card">
-                    <div class="filters__img">
-                      <svg>
-                        <use xlink:href="images/sprite.svg#finishing"></use>
-                      </svg>
-                    </div>
-                    <div class="filters__select">
-                      <select class="select select-finishing-3" name="finishing" id="">
+                  <li class="filters__item filter-block">
+                    <div class="filter-block__select">
+                      <select class="select" name="finishing" id="finishing">
                         <option value="Finnishing">Отделка</option>
                         <option value="White box">White box</option>
                         <option value="Black box">Black box</option>
