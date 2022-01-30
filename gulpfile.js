@@ -79,10 +79,9 @@ function styles() {
 function scripts() {
   return src([
       'node_modules/jquery/dist/jquery.js',
-      'node_modules/simplebar/dist/simplebar.js',
+      // 'node_modules/simplebar/dist/simplebar.js',
       'node_modules/nouislider/dist/nouislider.js',
       'node_modules/mixitup/dist/mixitup.js',
-      // 'node_modules/select2/dist/js/select2.js',
       'node_modules/swiper/swiper-bundle.min.js',
       'app/js/main.js'
     ])
