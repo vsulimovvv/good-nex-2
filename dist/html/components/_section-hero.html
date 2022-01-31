@@ -5,311 +5,106 @@
       <button class="swiper-button-next" type="button" aria-label="Следуйющий слайд"></button>
       <button class="swiper-button-prev" type="button" aria-label="Предыдущий слайд"></button>
 
-      <div class="slider-hero swiper">
-        <ul class="hero__slides swiper-wrapper">
-          <li class="swiper-slide">
-            <div class="hero__offer">
-              <h1 class="hero__title"><span class="color-accent">Бесплатно</span> подберем квартиру <br> в новостройке
-                <br>
-                <span class="hero__relative"> Москвы <small class="hero__undertitle">от застройщика</small></span>
-              </h1>
-            </div>
+      <div class="slider-hero">
+        <div class="hero__offer">
+          <h1 class="hero__title"><span class="color-accent">Бесплатно</span> подберем квартиру <br> в новостройке
+            <br>
+            <span class="hero__relative"> Москвы <small class="hero__undertitle">от застройщика</small></span>
+          </h1>
+        </div>
 
-            <form class="form hero__form">
-              <div class="hero__selection filters">
-                <ul class="filters__list">
-                  <li class="filters__item filter-block">
-                    <div class="filter-block__select">
-                      <select class="select" name="area" id="area">
-                        <option value="district">Район</option>
-                        <option value="cao">ЦАО</option>
-                        <option value="nw">Северо-Запад</option>
-                        <option value="sw">Юго-Запад</option>
-                        <option value="se">Юго-Восток</option>
-                        <option value="ne">Северо-Восток</option>
-                      </select>
-                    </div>
-                  </li>
-                  <li class="filters__item filter-block">
-                    <div class="filter-block__select">
-                      <select class="select" data-select="metro" name="metro" id="metro">
-                        <option value="metro">Метро</option>
-                        <option value="china-country">Китай-Страна</option>
-                        <option value="china-town">Китай-Город</option>
-                      </select>
-                    </div>
-                  </li>
-                  <li class="filters__item filter-block">
-                    <div class="filter-block__select">
-                      <select class="select" name="type" id="type">
-                        <option value="class">Класс ЖК</option>
-                        <option value="business">Бизнес</option>
-                        <option value="economy">Эконом</option>
-                      </select>
-                    </div>
-                  </li>
-                  <li class="filters__item filter-block">
-                    <div class="filter-block__select">
-                      <select class="select" name="area" id="rental">
-                        <option value="passed obj">Сдача ЖК</option>
-                        <option value="passed">Сдан</option>
-                        <option value="not passed">Не сдан</option>
-                      </select>
-                    </div>
-                  </li>
-                  <li class="filters__item filter-block filter-block--slider">
-                    <div class="filter-block__slider">
-                      <p class="filter-block__slider-text">Цена <span>14 млн - 22 млн</span>
-                      </p>
-                      <div class="filter-block__inputs">
-                        <label class="filter-block__label">
-                          <input class="filter-block__input input-price" type="number" min="14000000" max="22000000"
-                            id="price-input-1">
-                        </label>
-                        <label class="filter-block__label">
-                          <input class="filter-block__input input-price-2" type="number" min="14000000" max="22000000"
-                            id="price-input-2">
-                        </label>
-                      </div>
-                      <div class="filter-block__range range-slider range-slider--price"></div>
-                    </div>
-                  </li>
-                  <li class="filters__item filter-block filter-block--slider">
-                    <div class="filter-block__slider">
-                      <p class="filter-block__slider-text">Площадь <span>40 м - 80 м</span>
-                      </p>
-                      <div class="filter-block__inputs">
-                        <label class="filter-block__label">
-                          <input class="filter-block__input input-area" type="number" min="40" max="80" id="area-input-1">
-                        </label>
-                        <label class="filter-block__label">
-                          <input class="filter-block__input input-area-2" type="number" min="40" max="80" id="area-input-2">
-                        </label>
-                      </div>
-                      <div class="filter-block__range range-slider range-slider--area" id=""></div>
-
-                    </div>
-                  </li>
-                  <li class="filters__item filter-block">
-                    <div class="filter-block__select">
-                      <select class="select" name="finishing" id="finishing">
-                        <option value="Finnishing">Отделка</option>
-                        <option value="White box">White box</option>
-                        <option value="Black box">Black box</option>
-                      </select>
-                    </div>
-                  </li>
-                </ul>
-
-                <div class="filters__bottom">
-                  <button class="filters__btn btn" type="submit">Найти</button>
-                  <a class="filters__link" href="#">Бесплатный подбор</a>
+        <form class="form hero__form">
+          <div class="hero__selection filters">
+            <ul class="filters__list">
+              <li class="filters__item filter-block">
+                <div class="filter-block__select">
+                  <select class="select" name="area" id="area">
+                    <option value="district">Район</option>
+                    <option value="cao">ЦАО</option>
+                    <option value="nw">Северо-Запад</option>
+                    <option value="sw">Юго-Запад</option>
+                    <option value="se">Юго-Восток</option>
+                    <option value="ne">Северо-Восток</option>
+                  </select>
                 </div>
-              </div>
-            </form>
-          </li>
-          <li class="swiper-slide">
-            <div class="hero__offer">
-              <h1 class="hero__title"><span class="color-accent">Бесплатно</span> подберем квартиру <br> в новостройке
-                <br>
-                <span class="hero__relative"> Москвы <small class="hero__undertitle">от застройщика</small></span>
-              </h1>
-            </div>
-
-            <form class="form hero__form">
-              <div class="hero__selection filters">
-                <ul class="filters__list">
-                  <li class="filters__item filter-block">
-                    <div class="filter-block__select">
-                      <select class="select" name="area" id="area2">
-                        <option value="district">Район</option>
-                        <option value="cao">ЦАО</option>
-                        <option value="nw">Северо-Запад</option>
-                        <option value="sw">Юго-Запад</option>
-                        <option value="se">Юго-Восток</option>
-                        <option value="ne">Северо-Восток</option>
-                      </select>
-                    </div>
-                  </li>
-                  <li class="filters__item filter-block">
-                    <div class="filter-block__select">
-                      <select class="select" data-select="metro" name="metro" id="metro2">
-                        <option value="metro">Метро</option>
-                        <option value="china-country">Китай-Страна</option>
-                        <option value="china-town">Китай-Город</option>
-                      </select>
-                    </div>
-                  </li>
-                  <li class="filters__item filter-block">
-                    <div class="filter-block__select">
-                      <select class="select" name="type" id="type2">
-                        <option value="class">Класс ЖК</option>
-                        <option value="business">Бизнес</option>
-                        <option value="economy">Эконом</option>
-                      </select>
-                    </div>
-                  </li>
-                  <li class="filters__item filter-block">
-                    <div class="filter-block__select">
-                      <select class="select" name="area" id="rental2">
-                        <option value="passed obj">Сдача ЖК</option>
-                        <option value="passed">Сдан</option>
-                        <option value="not passed">Не сдан</option>
-                      </select>
-                    </div>
-                  </li>
-                  <li class="filters__item filter-block filter-block--slider">
-                    <div class="filter-block__slider">
-                      <p class="filter-block__slider-text">Цена <span>14 млн - 22 млн</span>
-                      </p>
-                      <div class="filter-block__inputs">
-                        <label class="filter-block__label">
-                          <input class="filter-block__input input-price" type="number" min="14000000" max="22000000"
-                            id="price-input-1">
-                        </label>
-                        <label class="filter-block__label">
-                          <input class="filter-block__input input-price-2" type="number" min="14000000" max="22000000"
-                            id="price-input-2">
-                        </label>
-                      </div>
-                      <div class="filter-block__range range-slider range-slider--price" id=""></div>
-                    </div>
-                  </li>
-                  <li class="filters__item filter-block filter-block--slider">
-                    <div class="filter-block__slider">
-                      <p class="filter-block__slider-text">Площадь <span>40 м - 80 м</span>
-                      </p>
-                      <div class="filter-block__inputs">
-                        <label class="filter-block__label">
-                          <input class="filter-block__input input-area" type="number" min="40" max="80" id="area-input-1">
-                        </label>
-                        <label class="filter-block__label">
-                          <input class="filter-block__input input-area-2" type="number" min="40" max="80" id="area-input-2">
-                        </label>
-                      </div>
-                      <div class="filter-block__range range-slider range-slider--area" id=""></div>
-                    </div>
-                  </li>
-                  <li class="filters__item filter-block">
-                    <div class="filter-block__select">
-                      <select class="select" name="finishing" id="finishing2">
-                        <option value="Finnishing">Отделка</option>
-                        <option value="White box">White box</option>
-                        <option value="Black box">Black box</option>
-                      </select>
-                    </div>
-                  </li>
-                </ul>
-
-                <div class="filters__bottom">
-                  <button class="filters__btn btn" type="submit">Найти</button>
-                  <a class="filters__link" href="#">Бесплатный подбор</a>
+              </li>
+              <li class="filters__item filter-block">
+                <div class="filter-block__select">
+                  <select class="select" data-select="metro" name="metro" id="metro">
+                    <option value="metro">Метро</option>
+                    <option value="china-country">Китай-Страна</option>
+                    <option value="china-town">Китай-Город</option>
+                  </select>
                 </div>
-              </div>
-            </form>
-          </li>
-          <li class="swiper-slide">
-            <div class="hero__offer">
-              <h1 class="hero__title"><span class="color-accent">Бесплатно</span> подберем квартиру <br> в новостройке
-                <br>
-                <span class="hero__relative"> Москвы <small class="hero__undertitle">от застройщика</small></span>
-              </h1>
-            </div>
-
-            <form class="form hero__form">
-              <div class="hero__selection filters">
-                <ul class="filters__list">
-                  <li class="filters__item filter-block">
-                    <div class="filter-block__select">
-                      <select class="select" name="area" id="area3">
-                        <option value="district">Район</option>
-                        <option value="cao">ЦАО</option>
-                        <option value="nw">Северо-Запад</option>
-                        <option value="sw">Юго-Запад</option>
-                        <option value="se">Юго-Восток</option>
-                        <option value="ne">Северо-Восток</option>
-                      </select>
-                    </div>
-                  </li>
-                  <li class="filters__item filter-block">
-                    <div class="filter-block__select">
-                      <select class="select" data-select="metro" name="metro" id="metro3">
-                        <option value="metro">Метро</option>
-                        <option value="china-country">Китай-Страна</option>
-                        <option value="china-town">Китай-Город</option>
-                      </select>
-                    </div>
-                  </li>
-                  <li class="filters__item filter-block">
-                    <div class="filter-block__select">
-                      <select class="select" name="type" id="type4">
-                        <option value="class">Класс ЖК</option>
-                        <option value="business">Бизнес</option>
-                        <option value="economy">Эконом</option>
-                      </select>
-                    </div>
-                  </li>
-                  <li class="filters__item filter-block">
-                    <div class="filter-block__select">
-                      <select class="select" name="area" id="rental5">
-                        <option value="passed obj">Сдача ЖК</option>
-                        <option value="passed">Сдан</option>
-                        <option value="not passed">Не сдан</option>
-                      </select>
-                    </div>
-                  </li>
-                  <li class="filters__item filter-block filter-block--slider">
-                    <div class="filter-block__slider">
-                      <p class="filter-block__slider-text">Цена <span>14 млн - 22 млн</span>
-                      </p>
-                      <div class="filter-block__inputs">
-                        <label class="filter-block__label">
-                          <input class="filter-block__input input-price" type="number" min="14000000" max="22000000"
-                            id="price-input-1">
-                        </label>
-                        <label class="filter-block__label">
-                          <input class="filter-block__input input-price-2" type="number" min="14000000" max="22000000"
-                            id="price-input-2">
-                        </label>
-                      </div>
-                      <div class="filter-block__range range-slider range-slider--price" id="range-slider"></div>
-                    </div>
-                  </li>
-                  <li class="filters__item filter-block filter-block--slider">
-                    <div class="filter-block__slider">
-                      <p class="filter-block__slider-text">Площадь <span>40 м - 80 м</span>
-                      </p>
-                      <div class="filter-block__inputs">
-                        <label class="filter-block__label">
-                          <input class="filter-block__input input-area" type="number" min="40" max="80" id="area-input-1">
-                        </label>
-                        <label class="filter-block__label">
-                          <input class="filter-block__input input-area-2" type="number" min="40" max="80" id="area-input-2">
-                        </label>
-                      </div>
-                      <div class="filter-block__range range-slider range-slider--area" id=""></div>
-
-                    </div>
-                  </li>
-                  <li class="filters__item filter-block">
-                    <div class="filter-block__select">
-                      <select class="select" name="finishing" id="finishing6">
-                        <option value="Finnishing">Отделка</option>
-                        <option value="White box">White box</option>
-                        <option value="Black box">Black box</option>
-                      </select>
-                    </div>
-                  </li>
-                </ul>
-
-                <div class="filters__bottom">
-                  <button class="filters__btn btn" type="submit">Найти</button>
-                  <a class="filters__link" href="#">Бесплатный подбор</a>
+              </li>
+              <li class="filters__item filter-block">
+                <div class="filter-block__select">
+                  <select class="select" name="type" id="type">
+                    <option value="class">Класс ЖК</option>
+                    <option value="business">Бизнес</option>
+                    <option value="economy">Эконом</option>
+                  </select>
                 </div>
-              </div>
-            </form>
-          </li>
-        </ul>
+              </li>
+              <li class="filters__item filter-block">
+                <div class="filter-block__select">
+                  <select class="select" name="area" id="rental">
+                    <option value="passed obj">Сдача ЖК</option>
+                    <option value="passed">Сдан</option>
+                    <option value="not passed">Не сдан</option>
+                  </select>
+                </div>
+              </li>
+              <li class="filters__item filter-block filter-block--slider">
+                <div class="filter-block__slider">
+                  <p class="filter-block__slider-text">Цена <span>14 млн - 22 млн</span>
+                  </p>
+                  <div class="filter-block__inputs">
+                    <label class="filter-block__label">
+                      <input class="filter-block__input input-price" type="number" min="14000000" max="22000000"
+                        id="price-input-1">
+                    </label>
+                    <label class="filter-block__label">
+                      <input class="filter-block__input input-price-2" type="number" min="14000000" max="22000000"
+                        id="price-input-2">
+                    </label>
+                  </div>
+                  <div class="filter-block__range range-slider range-slider--price"></div>
+                </div>
+              </li>
+              <li class="filters__item filter-block filter-block--slider">
+                <div class="filter-block__slider">
+                  <p class="filter-block__slider-text">Площадь <span>40 м - 80 м</span>
+                  </p>
+                  <div class="filter-block__inputs">
+                    <label class="filter-block__label">
+                      <input class="filter-block__input input-area" type="number" min="40" max="80" id="area-input-1">
+                    </label>
+                    <label class="filter-block__label">
+                      <input class="filter-block__input input-area-2" type="number" min="40" max="80" id="area-input-2">
+                    </label>
+                  </div>
+                  <div class="filter-block__range range-slider range-slider--area" id=""></div>
+
+                </div>
+              </li>
+              <li class="filters__item filter-block">
+                <div class="filter-block__select">
+                  <select class="select" name="finishing" id="finishing">
+                    <option value="Finnishing">Отделка</option>
+                    <option value="White box">White box</option>
+                    <option value="Black box">Black box</option>
+                  </select>
+                </div>
+              </li>
+            </ul>
+
+            <div class="filters__bottom">
+              <button class="filters__btn btn" type="submit">Найти</button>
+              <a class="filters__link" href="#">Бесплатный подбор</a>
+            </div>
+          </div>
+        </form>
       </div>
     </div>
   </div>
