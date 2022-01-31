@@ -1,136 +1,96 @@
 <section class="object-filters">
   <div class="container container--1640">
     <div class="object-filters__wrapper">
-      <button class="object-filters__btn" type="button">объекты списком</button>
-      <form class="form">
-        <div class="object-filters__filters filters">
-          <ul class="filters__list">
-            <li class="filters__item filter-card">
-              <div class="filters__img">
-                <svg>
-                  <use xlink:href="images/icons/map-icon.svg"></use>
-                </svg>
-              </div>
-              <div class="filters__select">
-                <select class="select" name="area" id="area">
-                  <option value="district">Район</option>
-                  <option value="cao">ЦАО</option>
-                  <option value="nw">Северо-Запад</option>
-                  <option value="sw">Юго-Запад</option>
-                  <option value="se">Юго-Восток</option>
-                  <option value="ne">Северо-Восток</option>
-                </select>
-              </div>
-            </li>
-            <li class="filters__item filter-card">
-              <div class="filters__img">
-                <svg>
-                  <use xlink:href="images/sprite.svg#metro"></use>
-                </svg>
-              </div>
-              <div class="filters__select">
-                <select class="select" data-select="metro" name="metro" id="metro">
-                  <option value="metro">Метро</option>
-                  <option value="china-country">Китай-Страна</option>
-                  <option value="china-town">Китай-Город</option>
-                </select>
-              </div>
-            </li>
-            <li class="filters__item filter-card">
-              <div class="filters__img">
-                <svg>
-                  <use xlink:href="images/sprite.svg#class"></use>
-                </svg>
-              </div>
-              <div class="filters__select">
-                <select class="select" name="type" id="type">
-                  <option value="class">Класс ЖК</option>
-                  <option value="business">Бизнес</option>
-                  <option value="economy">Эконом</option>
-                </select>
-              </div>
-            </li>
-            <li class="filters__item filter-card">
-              <div class="filters__img">
-                <svg>
-                  <use xlink:href="images/sprite.svg#key"></use>
-                </svg>
-              </div>
-              <div class="filters__select">
-                <select class="select" name="area" id="rental">
-                  <option value="passed obj">Сдача ЖК</option>
-                  <option value="passed">Сдан</option>
-                  <option value="not passed">Не сдан</option>
-                </select>
-              </div>
-            </li>
-            <li class="filters__item filters__item--big filter-card">
-              <div class="filters__img">
-                <svg>
-                  <use xlink:href="images/sprite.svg#rub"></use>
-                </svg>
-              </div>
-              <div class="filters__slider ">
-                <div class="filter-slider">
-                  <p class="filter-slider__text">Цена <span>14 млн - 22 млн</span>
-                  </p>
-                  <div class="filter-slider__inputs">
-                    <label class="filter-slider__label">
-                      <input class="filter-slider__input" type="number" min="14000000" max="22000000"
-                        id="price-input-1">
-                    </label>
-                    <label class="filter-slider__label">
-                      <input class="filter-slider__input" type="number" min="14000000" max="22000000"
-                        id="price-input-2">
-                    </label>
-                  </div>
-                  <div class="filter-slider__slider range-slider range-slider--price" id="range-slider"></div>
-                </div>
-              </div>
-            </li>
-            <li class="filters__item filters__item--big filter-card">
-              <div class="filters__img">
-                <svg>
-                  <use xlink:href="images/sprite.svg#area"></use>
-                </svg>
-              </div>
-              <div class="filters__slider ">
-                <div class="filter-slider">
-                  <p class="filter-slider__text">Площадь <span>40 м - 80 м</span>
-                  </p>
-                  <div class="filter-slider__inputs">
-                    <label class="filter-slider__label">
-                      <input class="filter-slider__input" type="number" min="40" max="80" id="area-input-1">
-                    </label>
-                    <label class="filter-slider__label">
-                      <input class="filter-slider__input" type="number" min="40" max="80" id="area-input-2">
-                    </label>
-                  </div>
-                  <div class="filter-slider__slider range-slider range-slider--area" id="range-slider2"></div>
-                </div>
-              </div>
-            </li>
-            <li class="filters__item filter-card">
-              <div class="filters__img">
-                <svg>
-                  <use xlink:href="images/sprite.svg#finishing"></use>
-                </svg>
-              </div>
-              <div class="filters__select">
-                <select class="select" name="finishing" id="finishing">
-                  <option value="Finnishing">Отделка</option>
-                  <option value="White box">White box</option>
-                  <option value="Black box">Black box</option>
-                </select>
-              </div>
-            </li>
-          </ul>
 
-          <div class="filters__bottom">
-            <a class="filters__link" href="#">Бесплатный подбор</a>
-          </div>
+      <button class="object-filters__btn" type="button">объекты списком</button>
+      
+      <div class="object-filters__filters filters pb70">
+        <ul class="filters__list">
+          <li class="filters__item filter-block">
+            <div class="filter-block__select">
+              <select class="select" name="area" id="area">
+                <option value="district">Район</option>
+                <option value="cao">ЦАО</option>
+                <option value="nw">Северо-Запад</option>
+                <option value="sw">Юго-Запад</option>
+                <option value="se">Юго-Восток</option>
+                <option value="ne">Северо-Восток</option>
+              </select>
+            </div>
+          </li>
+          <li class="filters__item filter-block">
+            <div class="filter-block__select">
+              <select class="select" data-select="metro" name="metro" id="metro">
+                <option value="metro">Метро</option>
+                <option value="china-country">Китай-Страна</option>
+                <option value="china-town">Китай-Город</option>
+              </select>
+            </div>
+          </li>
+          <li class="filters__item filter-block">
+            <div class="filter-block__select">
+              <select class="select" name="type" id="type">
+                <option value="class">Класс ЖК</option>
+                <option value="business">Бизнес</option>
+                <option value="economy">Эконом</option>
+              </select>
+            </div>
+          </li>
+          <li class="filters__item filter-block">
+            <div class="filter-block__select">
+              <select class="select" name="area" id="rental">
+                <option value="passed obj">Сдача ЖК</option>
+                <option value="passed">Сдан</option>
+                <option value="not passed">Не сдан</option>
+              </select>
+            </div>
+          </li>
+          <li class="filters__item filter-block filter-block--slider">
+            <div class="filter-block__slider">
+              <p class="filter-block__slider-text">Цена <span>14 млн - 22 млн</span>
+              </p>
+              <div class="filter-block__inputs">
+                <label class="filter-block__label">
+                  <input class="filter-block__input" type="number" min="14000000" max="22000000" id="price-input-1">
+                </label>
+                <label class="filter-block__label">
+                  <input class="filter-block__input" type="number" min="14000000" max="22000000" id="price-input-2">
+                </label>
+              </div>
+              <div class="filter-block__range range-slider range-slider--price" id="range-slider"></div>
+            </div>
+          </li>
+          <li class="filters__item filter-block filter-block--slider">
+            <div class="filter-block__slider">
+              <p class="filter-block__slider-text">Площадь <span>40 м - 80 м</span>
+              </p>
+              <div class="filter-block__inputs">
+                <label class="filter-block__label">
+                  <input class="filter-block__input" type="number" min="40" max="80" id="area-input-1">
+                </label>
+                <label class="filter-block__label">
+                  <input class="filter-block__input" type="number" min="40" max="80" id="area-input-2">
+                </label>
+              </div>
+              <div class="filter-block__range range-slider range-slider--area" id="range-slider2"></div>
+
+            </div>
+          </li>
+          <li class="filters__item filter-block">
+            <div class="filter-block__select">
+              <select class="select" name="finishing" id="finishing">
+                <option value="Finnishing">Отделка</option>
+                <option value="White box">White box</option>
+                <option value="Black box">Black box</option>
+              </select>
+            </div>
+          </li>
+        </ul>
+        <div class="filters__bottom">
+          <a class="filters__link filters__link--more" href="#">Больше параметров</a>
         </div>
-      </form>
+      </div>
+
       <ul class="object-filters__list">
         <li class="object-filters__item">
           <article class="product-card">
