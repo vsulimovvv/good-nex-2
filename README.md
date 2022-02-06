@@ -9,6 +9,7 @@ Frame20: https://vsulimovvv.github.io/good-nex-2/frame20.html
 Frame22: https://vsulimovvv.github.io/good-nex-2/frame22.html  
 Frame24: https://vsulimovvv.github.io/good-nex-2/frame24.html  
 Frame25: https://vsulimovvv.github.io/good-nex-2/frame25.html  
+Frame31: https://vsulimovvv.github.io/good-nex-2/dist/frame31.html  
 Котакты: https://vsulimovvv.github.io/good-nex-2/contacts.html  
 Блог: https://vsulimovvv.github.io/good-nex-2/blog-details.html  
 Кейс: https://vsulimovvv.github.io/good-nex-2/case.html  
